@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --background: #4D0300;
+  --secondery: #6b0d0d;
+}
+
+body {
+  background: var(--background);
+  /* Example of how to use the secondery color: */
+  border-color: var(--secondery);
+  /* Note: --foreground is missing from your :root block above */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
