@@ -15,7 +15,7 @@ export default function Footer() {
                         className="h-auto max-w-[80px]"
                     />
                     <h2 className="text-2xl font-bold text-[#dfba00] tracking-widest uppercase">
-                        Shahina Mehndi
+                        Shahin's Mehndi
                     </h2>
                     <p className="text-gray-300 max-w-xs">
                         Exquisite bridal artistry and traditional henna services for your most precious moments.

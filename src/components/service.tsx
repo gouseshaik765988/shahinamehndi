@@ -29,34 +29,31 @@ const services = [
         title: "Bridal Storytelling",
         image: "/bridal.png",
         desc: "Detailed 2026 portrait designs featuring couple caricatures, proposal scenes, and hidden initials.",
-
     },
     {
         title: "Organic Arabic Fusion",
         image: "/k.png",
         desc: "Bold Arabic strokes mixed with delicate jaali work using 100% chemical-free organic henna.",
-
     },
     {
         title: "Minimalist Mandalas",
         image: "/min.png",
         desc: "Symmetrical central mandalas with intricate finger lace-work for the contemporary, understated bride.",
-
     },
     {
         title: "Group Bookings",
         image: "/group.png",
         desc: "Special discounted packages for bridesmaids and family members (Minimum 10 persons).",
-
     },
 ];
 
 export default function Services() {
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
     return (
         <main className="min-h-screen py-20 px-6 bg-[#0a0a0a]">
             <div className="max-w-5xl mx-auto"> {/* Reduced max-width for a tighter look */}
-                <h1 className="text-2xl md:text-5xl   text-[#dfba00] text-center mb-4 uppercase tracking-tighter">
+                <h1 className="text-2xl md:text-5xl text-[#dfba00] text-center mb-4 uppercase tracking-tighter">
                     Our Specialised Services
                 </h1>
                 <p className="text-white/60 text-center mb-16 max-w-xl mx-auto text-sm md:text-base">
@@ -70,7 +67,7 @@ export default function Services() {
                             className={`group flex flex-col ${index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"} 
                             bg-white/5 backdrop-blur-sm border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-500 hover:bg-white/10 shadow-xl`}
                         >
-                            {/* Image Container - Width reduced to 1/3 and height lowered */}
+                            {/* Image Container */}
                             <div className="w-full md:w-1/3 aspect-square md:h-[320px] relative overflow-hidden">
                                 <img
                                     src={item.image}
@@ -81,7 +78,7 @@ export default function Services() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                             </div>
 
-                            {/* Content Container - Width expanded to 2/3 */}
+                            {/* Content Container */}
                             <div className="w-full md:w-2/3 p-6 md:p-10 flex flex-col justify-between">
                                 <div>
                                     <h3 className="text-2xl font-bold text-[#dfba00] mb-3">{item.title}</h3>
@@ -91,18 +88,17 @@ export default function Services() {
                                 </div>
 
                                 <div className="flex flex-row justify-between items-center border-t border-white/10 pt-5">
-
-
+                                    {/* Empty for now */}
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
-
             </div>
+
             <section className="min-h-screen bg-[#0a0a0a] py-20 ">
                 <div className="max-w-3xl mx-auto">
-                    <h1 className="   text-2xl md:text-2xl   text-[#dfba00] text-center mb-4 uppercase tracking-tighter">
+                    <h1 className="text-2xl md:text-2xl text-[#dfba00] text-center mb-4 uppercase tracking-tighter">
                         Frequently Asked Questions
                     </h1>
                     <p className="text-white/60 text-center mb-12 italic">Everything you need to know about your henna experience.</p>
@@ -114,12 +110,12 @@ export default function Services() {
                                 className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md transition-all duration-300"
                             >
                                 <button
-
                                     className="w-full flex justify-between items-center p-6 text-left hover:bg-white/5 transition-colors"
+                                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                 >
                                     <span className="text-lg font-semibold text-white pr-4">{faq.question}</span>
                                     <span className={`text-[#dfba00] text-2xl transition-transform duration-300 ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}>
-
+                                        +
                                     </span>
                                 </button>
 

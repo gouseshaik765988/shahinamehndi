@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/mainpage";
 import Footer from "../components/Footer";
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
 
 
 const geistSans = Geist({

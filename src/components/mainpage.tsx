@@ -51,18 +51,22 @@ export default function Header() {
 
 
                     <h1
-                        className="text-[6vw] md:text-5xl font-serif font-bold tracking-widest uppercase text-center whitespace-nowrap"
+                        className="text-[8vw] md:text-7xl text-center whitespace-nowrap font-normal"
                         style={{
-                            color: "var(--mehandi-gold, #daa520)",
-                            textShadow: "2px 2px 4px rgba(0,0,0,0.5)" // Darker shadow for background image
+                            fontFamily: "'Dancing Script', cursive",
+                            background: "linear-gradient(45deg, #d4af37, #f5de50, #b8860b)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
                         }}
                     >
                         Shahin's Mehndi
                     </h1>
+
                 </div>
 
                 {/* Subtitle / Quote */}
-                <p className="text-gray text-xs md:text-sm font-light tracking-wide text-center uppercase opacity-90 max-w-[250px] md:max-w-none line-clamp-2"
+                <p className="text-[#7d7460] text-xs md:text-sm font-light tracking-wide text-center uppercase opacity-90 max-w-[250px] md:max-w-none line-clamp-2"
                     style={{ textShadow: "1px 1px 1px rgba(0,0,0,0.7)" }}>
                     Where tradition meets intricate beauty
                 </p>

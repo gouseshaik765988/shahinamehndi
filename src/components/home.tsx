@@ -160,9 +160,7 @@ export default function Home() {
                 // Using a deep maroon color that closely matches the image background
                 className="text-gray p-8 md:p-12"
             >
-                <h1 className="text-2xl md:text-3xl font-bold mb-3">
-                    Welcome to Shahin's Mehndi
-                </h1>
+
 
                 {/* The horizontal line seen below the title */}
                 <div className="border-t border-white/50 mb-6 w-full"></div>

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Shahina%20Shaik/shahinamehndi/src/app/api/gallery/route.js"],"sourcesContent":["export async function GET() {\r\n    try {\r\n        const result = await cloudinary.api.resources({\r\n            type: 'upload',\r\n            resource_type: 'image',\r\n            prefix: 'home/mygallery',\r\n            max_results: 50,\r\n        });\r\n\r\n        // 👇 PUT IT RIGHT HERE\r\n        console.log('Cloudinary resources:', result.resources);\r\n\r\n        return NextResponse.json({ resources: result.resources });\r\n    } catch (error) {\r\n        console.error('Cloudinary error:', error);\r\n        return NextResponse.json(\r\n            { error: 'Failed to fetch images' },\r\n            { status: 500 }\r\n        );\r\n    }\r\n}\r\n"],"names":[],"mappings":";;;;AAAO,eAAe;IAClB,IAAI;QACA,MAAM,SAAS,MAAM,WAAW,GAAG,CAAC,SAAS,CAAC;YAC1C,MAAM;YACN,eAAe;YACf,QAAQ;YACR,aAAa;QACjB;QAEA,uBAAuB;QACvB,QAAQ,GAAG,CAAC,yBAAyB,OAAO,SAAS;QAErD,OAAO,aAAa,IAAI,CAAC;YAAE,WAAW,OAAO,SAAS;QAAC;IAC3D,EAAE,OAAO,OAAO;QACZ,QAAQ,KAAK,CAAC,qBAAqB;QACnC,OAAO,aAAa,IAAI,CACpB;YAAE,OAAO;QAAyB,GAClC;YAAE,QAAQ;QAAI;IAEtB;AACJ"}}]
+}

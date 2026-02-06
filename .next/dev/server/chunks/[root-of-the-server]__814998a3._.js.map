@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 94, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Shahina%20Shaik/shahinamehndi/src/app/api/gallery/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\r\nimport { v2 as cloudinary } from 'cloudinary';\r\n\r\ncloudinary.config({\r\n    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,\r\n    api_key: process.env.CLOUDINARY_API_KEY,\r\n    api_secret: process.env.CLOUDINARY_API_SECRET,\r\n});\r\n\r\nexport async function GET() {\r\n    console.log('🔥 API ROUTE HIT');\r\n\r\n    const result = await cloudinary.api.resources({\r\n        resource_type: 'image',\r\n\r\n        max_results: 10,\r\n    });\r\n\r\n    console.log('Cloudinary resources:', result.resources);\r\n\r\n    return NextResponse.json(result.resources);\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AACA;;;AAEA,iKAAU,CAAC,MAAM,CAAC;IACd,YAAY,QAAQ,GAAG,CAAC,qBAAqB;IAC7C,SAAS,QAAQ,GAAG,CAAC,kBAAkB;IACvC,YAAY,QAAQ,GAAG,CAAC,qBAAqB;AACjD;AAEO,eAAe;IAClB,QAAQ,GAAG,CAAC;IAEZ,MAAM,SAAS,MAAM,iKAAU,CAAC,GAAG,CAAC,SAAS,CAAC;QAC1C,eAAe;QAEf,aAAa;IACjB;IAEA,QAAQ,GAAG,CAAC,yBAAyB,OAAO,SAAS;IAErD,OAAO,iKAAY,CAAC,IAAI,CAAC,OAAO,SAAS;AAC7C"}}]
+}
