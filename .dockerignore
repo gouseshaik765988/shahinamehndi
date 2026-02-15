@@ -1,8 +1,0 @@
-cat <<EOF > .dockerignore
-node_modules
-.next
-.git
-.gitignore
-.dockerignore
-README.md
-EOF
