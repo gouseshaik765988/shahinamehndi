@@ -57,7 +57,7 @@ export default function Header() {
                             textShadow: "2px 2px 4px rgba(0,0,0,0.5)" // Darker shadow for background image
                         }}
                     >
-                        Shahin's Mehndi
+                        Shahin's Mehndi  d1
                     </h1>
                 </div>
 
