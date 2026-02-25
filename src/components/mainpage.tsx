@@ -60,7 +60,7 @@ export default function Header() {
                             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
                         }}
                     >
-                        Shahin's Mehndi
+                        Shahin's Mehndi   D1
                     </h1>
 
                 </div>

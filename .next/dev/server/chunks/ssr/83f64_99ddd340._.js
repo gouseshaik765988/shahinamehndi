@@ -2975,18 +2975,14 @@ const configEnv = ("TURBOPACK compile-time value", {
     "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
     "unoptimized": ("TURBOPACK compile-time value", false),
     "domains": ("TURBOPACK compile-time value", []),
-    "remotePatterns": ("TURBOPACK compile-time value", [
-        ("TURBOPACK compile-time value", {
-            "protocol": ("TURBOPACK compile-time value", "https"),
-            "hostname": ("TURBOPACK compile-time value", "res.cloudinary.com")
-        })
-    ]),
+    "remotePatterns": ("TURBOPACK compile-time value", []),
     "localPatterns": ("TURBOPACK compile-time value", [
         ("TURBOPACK compile-time value", {
             "pathname": ("TURBOPACK compile-time value", "**"),
             "search": ("TURBOPACK compile-time value", "")
         })
-    ])
+    ]),
+    "output": ("TURBOPACK compile-time value", "standalone")
 });
 if ("TURBOPACK compile-time truthy", 1) {
     ;
@@ -3333,18 +3329,14 @@ function getImageProps(imgProps) {
             "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
             "unoptimized": ("TURBOPACK compile-time value", false),
             "domains": ("TURBOPACK compile-time value", []),
-            "remotePatterns": ("TURBOPACK compile-time value", [
-                ("TURBOPACK compile-time value", {
-                    "protocol": ("TURBOPACK compile-time value", "https"),
-                    "hostname": ("TURBOPACK compile-time value", "res.cloudinary.com")
-                })
-            ]),
+            "remotePatterns": ("TURBOPACK compile-time value", []),
             "localPatterns": ("TURBOPACK compile-time value", [
                 ("TURBOPACK compile-time value", {
                     "pathname": ("TURBOPACK compile-time value", "**"),
                     "search": ("TURBOPACK compile-time value", "")
                 })
-            ])
+            ]),
+            "output": ("TURBOPACK compile-time value", "standalone")
         })
     });
     // Normally we don't care about undefined props because we pass to JSX,
