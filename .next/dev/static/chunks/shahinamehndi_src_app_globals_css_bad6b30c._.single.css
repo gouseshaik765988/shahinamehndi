@@ -616,10 +616,6 @@
     max-width: 250px;
   }
 
-  .max-w-\[350px\] {
-    max-width: 350px;
-  }
-
   .max-w-full {
     max-width: 100%;
   }
@@ -1136,10 +1132,6 @@
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
 
-  .text-\[6vw\] {
-    font-size: 6vw;
-  }
-
   .text-\[8vw\] {
     font-size: 8vw;
   }
@@ -1191,10 +1183,6 @@
 
   .whitespace-nowrap {
     white-space: nowrap;
-  }
-
-  .text-\[\#5f5846\] {
-    color: #5f5846;
   }
 
   .text-\[\#7d7460\] {
@@ -1600,13 +1588,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:text-3xl {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -1638,13 +1619,6 @@
     .md\:text-sm {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-xs {
-      font-size: var(--text-xs);
-      line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
 
