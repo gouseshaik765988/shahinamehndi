@@ -61,7 +61,7 @@ export default function Header() {
                         }}
                     >
                         Shahin's Mehndi
-                        changes done
+
                     </h1>
 
                 </div>
